@@ -19,7 +19,7 @@ author: spaghetti solution
 ###############################################
 
 navbar-links:
-  About Me: "introduction"
+  About: "introduction"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Database: "http://www.cs.cmu.edu/~ark/personas/"
