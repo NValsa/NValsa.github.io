@@ -21,7 +21,6 @@ author: spaghetti solution
 navbar-links:
   About: "introduction"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Database: "http://www.cs.cmu.edu/~ark/personas/"
 
 ################
