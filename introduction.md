@@ -4,7 +4,6 @@ title: introduction
 subtitle: 
 ---
 
-# Readme
 
 ## Title
 
@@ -28,8 +27,6 @@ Throughout this study, we will examine the relationship between movies and the f
   - Space Race
   - Proxy wars
   - Fall of the Berlin wall (1989)
-- Rwandan Genocide (1994)
-- Rise of internet and digital culture (late 90's)
 - 9/11 (2001)
 - Financial Crisis (2008)
 
@@ -154,9 +151,7 @@ For NLTK:
    ```python
    import nltk
    nltk.download()
+```
+## Link to website:
 
-
-
-## Questions for TAs
-
-Are we permitted to use a pretrained LLM to reformulate the plot summaries into simpler sentences? This would improve the quality of our results using CoreNLP as it struggles to identify which adjective to associate with each persona in complex sentences. This would not significantly change our pipeline, but rather just introduce an extra step to simplify the texts.
+NValsa.github.io

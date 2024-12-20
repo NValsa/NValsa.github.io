@@ -28,14 +28,13 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
 </section>
 
 <section id="introduction">
-    <h2>Introduction</h2>
-
-    <section id="introduction_motivation">
-        <p>The motivation behind our project</p>
-    </section>
-
-    <section id="introduction_dataset_exploration">
-        <h4>Exploring the dataset</h4>
+    <section id="history-in-hollywood">
+        
+        <h3>Introduction</h3>
+        
+        <p>
+          The story behind our project begins with a captivating exploration of cinematic history through a dataset provided by <a href="http://www.cs.cmu.edu/~ark/personas/" target="_blank">Movie Summary Corpus</a> in 2013. Movies have always been a mirror of society, reflecting the complexities of their times. Through our project, we aim to uncover how trends in plots and characters reflect historical events and their interplay with global film industries.
+        </p>
         <p align="center">
             <iframe
                 src="assets/plot/Introduction/movies_distribution_per_country.html"
@@ -43,87 +42,183 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
                 height="600px"
                 frameborder="0"
                 style="display: block; margin: 0 auto; position: relative"
-                >Plot CoreNLP</iframe
-            >
+                >
+            </iframe>
         </p>
-        <p align="center">
-            <iframe
-                src="assets/plot/Introduction/collab_usa_heatmap.html"
-                width="2500px"
-                height="800px"
-                frameborder="0"
-                style="display: block; margin: 0 auto; position: relative"
-                >Plot CoreNLP</iframe
-            >
+
+        <p>
+          An analysis of the <a href="#introduction_dataset_exploration">total number of movies 
+            released by country</a> highlights the overwhelming dominance of the United States, which accounts for nearly half of the database. This inspired us to focus primarily on U.S. cinema, which serves as a rich lens through which we explore three compelling themes: <a href="#part1"><strong>war</strong></a>, <a href="#part2"><strong>social changes</strong></ahref></a>, and <a href="#part3"><strong>economic struggle</strong></a>. These themes unravel the narratives that have shaped history and continue to influence our understanding of it.
+        </p>
+        
+        <h3>The Initial Vision: A Tale of Two Rivals</h3>
+        
+        <p>
+          Originally, our analysis aimed to compare American movies with those from Russia, driven by the long-standing rivalry between the two nations. This rivalry, steeped in decades of proxy wars, economic and political differences, and iconic historical moments—such as the <strong>Cold War</strong>, the <strong>Space Race</strong>, and the <strong>fall of the Berlin Wall</strong>—offered a unique opportunity to explore contrasting cinematic perspectives.
+        </p>
+        
+        <p>
+          The timeline of significant events in the U.S.-Russia relationship aligns closely with the period covered by the dataset. This seemed to provide a fertile ground for comparative analysis. However, this ambition was met with a challenge: <strong>dataset bias.</strong>
+        </p>
+        
+        <h3>Why Focus Solely on American Movies?</h3>
+        
+        <p>
+          While comparing the two nations’ cinemas was an exciting proposition, the dataset proved to be heavily biased. U.S. cinema dominates the corpus in terms of quantity, diversity, and completeness of data, making any meaningful comparison with Russian films difficult. This lack of balance between the two sides of the rivalry hindered our ability to draw fair and comprehensive conclusions.
+        </p>
+        
+        <p>
+          As a result, we decided to shift our focus entirely to American cinema. However, we will still examine the <strong>bipolar perspective of the Cold War</strong> through the lens of U.S. cinema, which often reflects the ideological struggles of the time. For example, the <strong>Vietnam War</strong>, a defining event of the bipolar conflict, will be analyzed from the U.S. point of view. This approach allows us to understand how American cinema portrayed the geopolitical tensions and ideological divides of the era.
+        </p>
+
+        <section id="usa-movies-over-time">
+            <h2>Movies Produced in the USA Over Time</h2>
+            <p>
+                As we dive into the analysis of trends in American cinema, it's essential to start with a general overview of movie production over time. A graph showcasing the number of movies produced in the USA across decades provides a clear picture of the evolution of the American film industry.
+            </p>
+
+            <img src="{{ 'assets/img/Usaovertime.png' | relative_url }}" alt="Not found" />
+            <h3>Key Observations:</h3>
+            <ul>
+                <li>
+                    <strong>Early Growth (Pre-1940s):</strong> 
+                    The initial surge in movie production aligns with Hollywood's rise as the global hub of filmmaking, establishing the USA as a leader in the industry.
+                </li>
+                <li>
+                    <strong>Golden Age (1940s-1960s):</strong> 
+                    A steady production level marked by iconic genres such as westerns, musicals, and noir defined this period.
+                </li>
+                <li>
+                    <strong>Modern Expansion (Post-1970s):</strong> 
+                    A noticeable increase in production reflects technological advancements, globalization, and the diversification of genres.
+                </li>
+            </ul>
+            <p>
+                This graph lays the groundwork for understanding how trends in plot, character representation, and collaborations evolve, offering a comprehensive backdrop to the more focused analyses to come.
+            </p>
+        </section>
+        
+        <p>
+          Through this narrowed focus, we hope to provide a nuanced understanding of American cinema’s response to historical events, social changes, and economic challenges. By concentrating on this rich dataset, our project delves into the narratives that have shaped history and offers insights into the interplay between film and society.
+        </p>
+        
+        <p>
+          Stay tuned as we explore these themes further in our analysis, highlighting the power of cinema as both a storyteller and a historical archive.
         </p>
     </section>
+    <section id="introduction_dataset_exploration">
+        
+        <section id="collaborations">
+            <h2>Collaboration in Movies Between the USA and other Countries</h2>
+            <p>
+                An interesting dimension of our analysis lies in exploring international collaborations in filmmaking. To visualize this, we created a heat map that displays the normalized fraction of movies co-produced by the USA with other countries over time, using time bins of 10 years. This heat map provides a unique lens to examine how historical and geopolitical contexts influence cinematic partnerships.
+            </p>
+            <p align="center">
+                <iframe
+                    src="assets/plot/Introduction/collab_usa_heatmap.html"
+                    width="2500px"
+                    height="800px"
+                    frameborder="0"
+                    style="display: block; margin: 0 auto; position: relative"
+                    >Plot CoreNLP</iframe
+                >
+            </p>
+
+            <h3>Key Observations:</h3>
+            <ul>
+                <li>
+                    <strong>Collaborations with Allies:</strong>
+                    The USA has consistently collaborated with countries such as 
+                    <strong>France</strong>, <strong>Germany</strong>, and the 
+                    <strong>United Kingdom</strong> over the decades. These collaborations reflect long-standing cultural and political alliances, especially in the aftermath of WWII and during the Cold War era.
+                </li>
+                <li>
+                    <strong>Rivals Avoided:</strong>
+                    Unsurprisingly, the USA has had no significant cinematic collaborations with its key geopolitical rivals, 
+                    <strong>Russia</strong> and <strong>China</strong>. This aligns with historical tensions stemming from the Cold War, ideological differences, and trade barriers.
+                </li>
+                <li>
+                    <strong>Japan: A Unique Case:</strong>
+                    Japan stands out as a country where collaboration trends evolve over time. After WWII, Japan gradually opened up to the USA, leading to an increase in cinematic partnerships. This mirrors Japan’s broader post-war economic and cultural integration with Western powers.
+                </li>
+                <li>
+                    <strong>Global Influence:</strong>
+                    The USA's dominance in cinema is reflected in its ability to engage in numerous partnerships worldwide, albeit selectively. This pattern underscores how soft power operates in shaping international relationships, with cinema serving as a cultural bridge—or boundary—depending on the geopolitical landscape.
+                </li>
+            </ul>
+            <p>
+                The heat map thus offers a visual narrative of how cinema intertwines with diplomacy and global relations, spotlighting patterns of collaboration and exclusion shaped by historical context.
+            </p>
+        </section>
+        
+    </section>
+    
 
     <section id="introduction_theme_selection">
-        <h4>Selecting the main axes for our analysis</h4>
-        <p>Here will be the text about how we selected the themes</p>
+        <p></p>
     </section>
 </section>
 
-<section id="part1">
+<section id="war-movies-analysis">
     <h2>Part 1: War</h2>
-    <section id="part1_6_nations">
-        <p>
-            In this section we will see the trend of war movies in different
-            countries.
-        </p>
-        <p><strong>Here will be the plot with the 6 nations</strong></p>
-    </section>
+    <p>
+        In this section, we examine first the trends of war-related movies in six countries: Germany, USA, Italy, France, UK, and Russia. A plot showcasing the production of war films over time reveals distinct patterns tied to each nation's historical and cultural context.
+    </p>
 
-    <section id="part1_USA">
-        <p>
-            Here we will look at the keywords present in the summaries of movies
-            and correlate them with historical events.
-            <ul>
-                <li>
-                    <strong>Middle East (Post-2004)</strong>: The rise in films related to
-                    the Middle East after the Iraq War likely reflects Hollywood’s reaction
-                    to the growing geopolitical and military presence in the region, shaping
-                    cultural perceptions.
-                </li>
-
-                <li>
-                    <strong>Nazi (1940s and 1960s-70s)</strong>: The surge in Nazi-related
-                    films during the 1940s coincides with World War II. A second wave in the
-                    1960s and 70s likely stems from Cold War tensions, as filmmakers
-                    revisited themes of authoritarianism and totalitarian regimes.
-                </li>
-
-                <li>
-                    <strong>Vietnam (1960s-80s)</strong>: The two peaks in Vietnam-related
-                    films illustrate the immediate cultural response to the war in the 1960s
-                    and 1970s, followed by a critical reappraisal of its impact on American
-                    society in the 1980s.
-                </li>
-            </ul>
-        </p>
-        <p>
-            <strong
-                >Here will be plots with american movies about Nazis, Vietnam
-                war and Iraq war</strong
-            >
-        </p>
-    </section>
+    <img src="{{ 'assets/img/six_nations_war.png' | relative_url }}" alt="Not found" />
+    <h3>Key Observations:</h3>
+    <ul>
+        <li>
+            <strong>Germany:</strong> Decline during WWII, post-war introspection, and modern focus on human stories.
+        </li>
+        <li>
+            <strong>USA:</strong> Peaks during WWII, Vietnam War era, and post-9/11 with a focus on contemporary conflicts.
+        </li>
+        <li>
+            <strong>Italy:</strong> Neorealist narratives after WWII, followed by a decline in later decades.
+        </li>
+        <li>
+            <strong>France:</strong> WWII resistance films, Algerian War narratives, and exploration of colonial themes.
+        </li>
+        <li>
+            <strong>UK:</strong> WWII resilience stories transitioning to personal and moral struggles.
+        </li>
+        <li>
+            <strong>Russia:</strong> Soviet-era heroism, with modern films critiquing war and its consequences.
+        </li>
+    </ul>
+    <h3>Thematic Keyword Analysis:</h3>
+    <ul>
+        <li>
+            <strong>Middle East (Post-2004):</strong> Films addressing the Iraq War and geopolitical dynamics of the region.
+            <img src="{{ 'assets/img/middleeast.png' | relative_url }}" alt="Not found" />
+        </li>
+        <li>
+            <strong>Nazi (1940s and 1960s-70s):</strong> Wartime propaganda transitioning to Cold War themes.
+            <img src="{{ 'assets/img/nazi.png' | relative_url }}" alt="Not found" />
+        </li>
+        <li>
+            <strong>Vietnam (1960s-80s):</strong> Early nationalistic portrayals evolving into critical examinations of the war's impact.
+            <img src="{{ 'assets/img/vietnam.png' | relative_url }}" alt="Not found" />
+        </li>
+    </ul>
+    <p>
+        This analysis underscores how each nation's film industry reflects its unique historical experiences, using cinema to interpret and narrate the complexities of war.
+    </p>
+</section>
 
     <section id="part1_topic_analysis_persona">
         <p>
             Here we will see which personas are detected by the CoreNLP
             analysis.
         </p>
-        <p>
-            <strong
-                >Here will be Valentin's plot with the weird PCA topics</strong
-            >
-        </p>
+
     </section>
 </section>
 
+
 <section id="part2">
-    <h2>Part 2: Economic struggle</h2>
+    <h2>Part 2: Social changes</h2>
     <section id="part2_6_nations">
         <p>
             In this section we will see the trend of economic topics in movies
@@ -135,7 +230,8 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
     <section id="part2_USA">
         <p>
             Here we will look at the keywords present in the summaries of movies
-            and correlate them with historical events.
+            and correlate them with historical events. We will see if they are
+            correlated with the civil rights movement
         </p>
         <p>
             <strong
@@ -159,7 +255,7 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
 </section>
 
 <section id="part3">
-    <h2>Part 3: Social changes</h2>
+    <h2>Part 3: Economic struggle</h2>
     <section id="part3_6_nations">
         <p>
             In this section we will see the trend of economic topics in movies
@@ -171,13 +267,11 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
     <section id="part3_USA">
         <p>
             Here we will look at the keywords present in the summaries of movies
-            and correlate them with historical events. We will see if they are
-            correlated with the civil rights movement
+            and correlate them with historical events.
         </p>
         <p>
             <strong
-                >Here will be plots with american movies about Nazis, Vietnam
-                war and Iraq war</strong
+                >Here will be plots with american movies about </strong
             >
         </p>
     </section>
