@@ -152,7 +152,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
             </p>
             <p align="center">
                 <iframe
-                    src="assets/plot/normelize_collab_USA_heatmap.html"
+                    src="assets/plot/normelize_collab_USA_heatmap_rows_normalized.html"
                     width="1000px"
                     height="800px"
                     frameborder="0"
@@ -295,7 +295,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     <section id="core-nlp-analysis">
         <h2>CoreNLP Analysis</h2>
         <p>
-            In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. We tried to extract a description of the characters or personas form the movie plots, and to perform latent dirichlet allocation (LDA) to form cluster of similar personas. We used the CoreNLP model to identify the characters named in the plots and to find the words used to describe these characters. We chose to look for 100 clusters of personas, to have enough to form meaningful categories, while not looking for too many to keep the results manageable.
+            In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. We tried to extract a description of the characters or personas from the movie plots, and to perform latent dirichlet allocation (LDA) to form cluster of similar personas. We used the CoreNLP model to identify the characters named in the plots and to find the words used to describe these characters. We chose to look for 100 clusters of personas, to have enough to form meaningful categories, while not looking for too many to keep the results manageable.
 
             For each of these clusters of personas, we identified the 10 most relevant words, however, these groups of words are difficult to interpret as they are formed from the distances between personas and this logic doesn’t match with a human understanding of characters in movies. 
             
