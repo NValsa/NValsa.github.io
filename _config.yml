@@ -20,7 +20,6 @@ author: spaghetti solution
 ###############################################
 
 navbar-links:
-
   Resources:
     - Dataset: "http://www.cs.cmu.edu/~ark/personas/"
     - Repository: "https://github.com/NValsa/NValsa.github.io"

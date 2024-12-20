@@ -19,9 +19,9 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     <h2>Table of Contents</h2>
     <ul>
         <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#part1">Part 1 </a></li>
-        <li><a href="#part2">Part 2 </a></li>
-        <li><a href="#part3">Part 3 </a></li>
+        <li><a href="#part1">War </a></li>
+        <li><a href="#part2">Society </a></li>
+        <li><a href="#part3">Economy</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
     </ul>
 </section>
@@ -55,7 +55,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
             <h2>Exploring the Movie Summary Corpus</h2>
             <p align="center">
                 <iframe
-                    src="assets/plot/Introduction/dist_per_sub_country1_df_unclipped.html"
+                    src="assets/plot/dist_per_sub_country1_df_unclipped.html"
                     width="950px"
                     height="600px"
                     frameborder="0"
@@ -67,7 +67,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     
             <p>
               A preliminar analysis of the <a href="exploring-the-movie-summary-corpus"> total number of movies 
-                released by country</a> highlights the overwhelming dominance of the United States, which accounts for 42.04 % of the database. U.S. cinema especially beginned to look like the potential candidate to be scoped under a rich lens through which explore three compelling themes: <a href="#part1"><strong>war</strong></a>, <a href="#part2"><strong>social changes</strong></a>, and <a href="#part3"><strong>economic struggle</strong></a>. These themes unravel the narratives that have shaped history and continue to influence our understanding of it.
+                released by country</a> highlights the overwhelming dominance of the United States, which accounts for 42.04 % of the database. U.S. cinema especially beginned to look like the potential candidate to be scoped under a rich lens through which explore three compelling themes: <a href="#part1"><strong>war</strong></a>, <a href="#part2"><strong>social</strong></a>, and <a href="#part3"><strong>economic</strong></a> changes. These themes unravel the narratives that have shaped history and continue to influence our understanding of it.
             </p>
         </section>
         
@@ -90,7 +90,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
         </p>
         <p align="center">
             <iframe
-                src="assets/plot/Introduction/dist_per_sub_country1_df_original.html"
+                src="assets/plot/dist_per_sub_country1_df_original.html"
                 width="800px"
                 height="600px"
                 frameborder="0"
@@ -111,7 +111,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 
             <p align="center">
                 <iframe
-                    src="assets/plot/Introduction/plot_USA_date_distribution.html"
+                    src="assets/plot/plot_USA_date_distribution.html"
                     width="800px"
                     height="600px"
                     frameborder="0"
@@ -152,7 +152,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
             </p>
             <p align="center">
                 <iframe
-                    src="assets/plot/Introduction/normelize_collab_USA_heatmap.html"
+                    src="assets/plot/normelize_collab_USA_heatmap.html"
                     width="1000px"
                     height="800px"
                     frameborder="0"
@@ -216,7 +216,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     </ul>
     <p align="center">
         <iframe
-            src="assets/plot/Wars/Frequency and Normalized frequency of Vietnam-Related Movies per Year.html"
+            src="assets/plot/Frequency and Normalized frequency of Vietnam-Related Movies per Year.html"
             width="900px"
             height="800px"
             frameborder="0"
@@ -234,7 +234,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     </p>
     <p align="center">
         <iframe
-            src="assets/plot/Wars/Frequency and Normalized frequency of Nazi-Related Movies per Year.html"
+            src="assets/plot/Frequency and Normalized frequency of Nazi-Related Movies per Year.html"
             width="900px"
             height="800px"
             frameborder="0"
@@ -250,7 +250,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 
     <p align="center">
         <iframe
-            src="assets/plot/Wars/Frequency and Normalized frequency of Middle East-Related Movies per Year.html"
+            src="assets/plot/Frequency and Normalized frequency of Middle East-Related Movies per Year.html"
             width="900px"
             height="800px"
             frameborder="0"
@@ -259,16 +259,22 @@ subtitle: Do tendencies in American Cinema reflect historical events?
         >
     </p>
 
-    <p>
-        This analysis underscores how each nation's film industry reflects its unique historical experiences, using cinema to interpret and narrate the complexities of war.
-    </p>
 </section>
 
-<p>
-    In this section, we examine first the trends of war-related movies in six countries: Germany, USA, Italy, France, UK, and Russia. A plot showcasing the production of war films over time reveals distinct patterns tied to each nation's historical and cultural context.
+<h3>Italy’s Post-War Cinema: Reflections of Struggle and Rebirth</h3>
+
+<p align="center">
+    <iframe
+        src="assets/plot/hist_gen_event_date_plots_only_italy.html"
+        width="950px"
+        height="600px"
+        frameborder="0"
+        style="display: block; margin: 0 auto; position: relative"
+        >Plot CoreNLP</iframe
+    >
 </p>
 
-<img src="{{ 'assets/img/six_nations_war.png' | relative_url }}" alt="Not found" />
+
 <h3>Key Observations:</h3>
 <ul>
     <li>
@@ -289,25 +295,60 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     <section id="core-nlp-analysis">
         <h2>CoreNLP Analysis</h2>
         <p>
-            In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. These topics are essentially clusters of related words, which we analyzed to gain insights into trends and recurring themes in U.S. cinema over time.
+            In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. We tried to extract a description of the characters or personas form the movie plots, and to perform latent dirichlet allocation (LDA) to form cluster of similar personas. We used the CoreNLP model to identify the characters named in the plots and to find the words used to describe these characters. We chose to look for 100 clusters of personas, to have enough to form meaningful categories, while not looking for too many to keep the results manageable.
+
+            For each of these clusters of personas, we identified the 10 most relevant words, however, these groups of words are difficult to interpret as they are formed from the distances between personas and this logic doesn’t match with a human understanding of characters in movies. 
+            
+            Nonetheless, we looked for trends in the distribution of these topics over time for all american films and subsets of films linked to certain historical events. 
+            .
         </p>
         <p>
             Several visualizations were generated to study these topics, including:
         </p>
-        <ul>
-            <li>
-                <strong>Normalized Cumulative Appearance of Assigned Topics (0 to 99) Over Time:</strong> A broad view of topic trends throughout the dataset's timeline.
-            </li>
-            <li>
-                <strong>Evolution of Topics in Middle East-Related Films Over Time:</strong> Focused analysis of topics in films addressing the Middle East, filtered to include only topics appearing at least five times.
-            </li>
-            <li>
-                <strong>Evolution of Topics in Vietnam-Related Films Over Time:</strong> Similar analysis for Vietnam-related films, also filtered to a minimum of five appearances per topic.
-            </li>
-        </ul>
+        <p>
+            <strong>Evolution of Topics in Middle East-Related Films Over Time:</strong> Focused analysis of topics in films addressing the Middle East, filtered to include only topics appearing at least five times.
+        </p>
+        <p align="center">
+            <iframe
+                src="assets/plot/Evolution of Topics in Middle East Related Films Over Time (minimum 5 appearances).html"
+                width="950px"
+                height="800px"
+                frameborder="0"
+                style="display: block; margin: 0 auto; position: relative"
+                >Plot CoreNLP</iframe
+            >
+        </p>
+
+        <p>
+            <strong>Evolution of Topics in Vietnam-Related Films Over Time:</strong> Similar analysis for Vietnam-related films, also filtered to a minimum of five appearances per topic.
+        </p>
+        <p align="center">
+            <iframe
+                src="assets/plot/Evolution of Topics in Vietnam Related Films Over Time (minimum 5 appearances).html"
+                width="950px"
+                height="800px"
+                frameborder="0"
+                style="display: block; margin: 0 auto; position: relative"
+                >Plot CoreNLP</iframe
+            >
+        </p>
+
         <p>
             Despite these efforts, a preliminary analysis did not reveal any particularly striking patterns or insights, with one notable exception: <strong>Topic 87</strong>. This topic stood out due to its record presence across the dataset, warranting further investigation into its content and significance.
         </p>
+        <section id="topic-87-role-hypothesis">
+            <h3>Hypothesis on Character Role for Topic 87</h3>
+            <p>Based on the words correlated to Topic 87—<strong>wears, order, despises, hurls, examine, divorced, unsuspecting, disturbed, relax, retaliates</strong>—we can hypothesize that this topic is associated with a specific type of character who likely experiences emotional or psychological turmoil. These words suggest a character who:</p>
+            
+            <ul>
+                <li><strong>Experiences conflict</strong>: Words like "despises," "hurls," "retaliates," and "disturbed" indicate a character involved in significant conflict, either internal (psychological) or external (with other characters). This could be a character who is angry, seeking revenge, or dealing with deep emotional issues.</li>
+                <li><strong>Has a strained or complex relationship</strong>: The inclusion of "divorced" suggests that this character has experienced a failed relationship, which may be a central part of their story. The words "unsuspecting" and "examine" imply that the character may be in situations where others around them are unaware of their internal struggles, or they might be trying to figure out the truth about someone or something.</li>
+                <li><strong>Is in a situation of control or power struggle</strong>: The word "order" could imply that this character is in a position of authority or has a need to control their environment, perhaps linked to their emotional state or history.</li>
+                <li><strong>Desires or struggles with relaxation</strong>: "Relax" suggests that this character may have moments of introspection or attempts to find peace, but they may be disturbed by ongoing struggles, making it hard for them to truly relax.</li>
+            </ul>
+            
+            <p><strong>Hypothesis:</strong> This set of words could describe a <strong>protagonist or antagonist</strong> who is a <strong>disturbed, vengeful, or emotionally scarred character</strong>. They might be going through a difficult period, such as post-divorce or recovering from a traumatic experience, leading them to seek revenge or to confront those around them. They may be portrayed as having moments of introspection but struggling to find peace due to internal or external conflict. A character type that fits this description might include a <strong>disillusioned ex-spouse</strong>, a <strong>person seeking revenge</strong>, or a <strong>traumatized individual</strong> who wrestles with emotional or psychological issues, leading them to react impulsively or aggressively. This could be a <strong>tragic hero</strong> or a <strong>complex anti-hero</strong> in a drama or psychological thriller.</p>
+        </section>
         <p>
             Below, we provide the list of words associated with some of the most prominent topics, offering a glimpse into the recurring themes that shaped Hollywood narratives during the analyzed period.
         </p>
@@ -315,7 +356,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 </section>
 
   <section id="part2">
-    <h2>Part 2: Social Changes</h2>
+    <h2>Part 2: Society</h2>
     <p>
       This section explores the portrayal of social change in cinema, focusing on the evolution of societal norms and struggles, such as civil rights, feminism, and movements for equality.
     </p>
@@ -331,7 +372,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 
     <p align="center">
         <iframe
-            src="assets/plot/Social changes/hist_event_USA_plots_only_social.html"
+            src="assets/plot/hist_event_USA_plots_only_social.html"
             width="800px"
             height="550px"
             frameborder="0"
@@ -348,7 +389,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 
     <p align="center">
         <iframe
-            src="assets/plot/Social changes/normalized_woman_rights_movies_per_year.html"
+            src="assets/plot/normalized_woman_rights_movies_per_year.html"
             width="950px"
             height="550px"
             frameborder="0"
@@ -401,35 +442,37 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     
 
 <section id="part3">
-    <h2>Part 3: Economic struggle</h2>
-    <section id="part3_6_nations">
+    <h2>Part 3: Economy</h2>
+    <section id="economic-struggle-films">
+        <h2>Economic Struggle in Cinema</h2>
         <p>
-            In this section we will see the trend of economic topics in movies
-            in different countries.
+            It is often challenging to identify films related to economic struggle through simple keywords, as the theme can be deeply embedded within complex social, political, and personal narratives. However, by examining the thematic focus in films from various countries, we can see how different nations have addressed economic hardship through cinema. The graph of movies related to economic struggle reveals significant responses from several countries, with Italy standing out, especially in the post-war period. 
         </p>
-        <p><strong>Here will be the plot with the 6 nations</strong></p>
-    </section>
 
-    <section id="part3_USA">
-        <p>
-            Here we will look at the keywords present in the summaries of movies
-            and correlate them with historical events.
-        </p>
-        <p>
-            <strong
-                >Here will be plots with american movies about </strong
+        <p align="center">
+            <iframe
+                src="assets/plot/hist_economic_event_date_plots.html"
+                width="950px"
+                height="550px"
+                frameborder="0"
+                style="display: block; margin: 0 auto; position: relative"
+                >Plot CoreNLP</iframe
             >
         </p>
-    </section>
-
-    <section id="part3_topic_analysis_persona">
         <p>
-            Here we will see which personas are detected by the CoreNLP
-            analysis.
+            After World War II, Italy experienced an economic boom, often called the "Italian economic miracle." This period was marked by rapid industrial growth and a dramatic shift in society, and Italian cinema became a powerful medium for portraying the harsh realities of this transformation. Filmmakers in Italy, particularly through the Neorealist movement, addressed themes of poverty, unemployment, and the daily struggles of ordinary people. Movies like *Bicycle Thieves* (1948) became iconic for their portrayal of individuals facing economic hardship in the aftermath of war. In comparison, the USA and France also depicted economic struggles, but these were often linked to broader social and political changes rather than the acute financial distress seen in post-war Italy.
         </p>
         <p>
-            <strong
-                >Here will be Valentin's plot with the weird PCA topics</strong
+            In contrast, the financial crisis of the late 2000s led to a noticeable increase in films addressing economic instability. This surge reflects the global impact of the 2007-2008 financial crisis, with films such as *The Big Short* (2015) and *Inside Job* (2010) exploring the causes and consequences of the economic collapse. These films examine the intricacies of the financial system and the human toll of economic inequality, shedding light on the systemic issues that led to the crisis. The financial crisis theme continues to resonate in cinema, illustrating the ongoing relevance of economic struggles in global discourse.
+        </p>
+        <p align="center">
+            <iframe
+                src="assets/plot/hist_event_USA_plots_only_economic.html"
+                width="950px"
+                height="550px"
+                frameborder="0"
+                style="display: block; margin: 0 auto; position: relative"
+                >Plot CoreNLP</iframe
             >
         </p>
     </section>
