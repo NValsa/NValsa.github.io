@@ -1,7 +1,7 @@
 ---
 layout: home
 title: History in Hollywood
-subtitle: How trends in the plots and personas in American Cinema reflect historical event and relate with other film industries.
+subtitle: Do tendencies in American Cinema reflect historical events?
 ---
 
 <section
@@ -29,27 +29,43 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
 <section id="introduction">
     <section id="history-in-hollywood">
         
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         
         <p>
-          The story begins with a captivating exploration of cinematic history through a dataset provided by <a href="http://www.cs.cmu.edu/~ark/personas/" target="_blank">Movie Summary Corpus</a> published in 2013. Movies have always been a mirror of society, reflecting the complexities of their times. Through this article, we aim to uncover how trends in plots and characters reflect historical events.
+          The story begins with an exploration of cinematic history through a dataset provided by <a href="http://www.cs.cmu.edu/~ark/personas/" target="_blank">Movie Summary Corpus</a> (2013). Movies have always been a mirror of society, reflecting the complexities of human mingling. Through this article, we aim to uncover how trends of movie plots and characters could potentially reflect historical events.
         </p>
+        <p> But let's begin from... the beginning right?</p>
+
+        <section id="video-section">
+            <video controls width="640" height="360">
+                <source src="assets/img/roundhaygardenscene.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>This is a historical video from the Roundhay Garden Scene, considered one of the oldest surviving motion pictures.</p>
+        </section>
+        <p>
+            The oldest film in the database, Roundhay Garden Scene (1888), holds a special place in cinematic history. Produced in the United Kingdom, this silent short film is widely recognized as the world's earliest surviving motion picture. With a runtime of just 3 seconds, it provides a glimpse into the very beginnings of filmmaking.
+            
+            The film, shot in black-and-white, is categorized as a silent, indie short film. While it lacks a plot description, its significance lies in its pioneering use of moving images to capture everyday life. Directed by Louis Le Prince, it features a brief scene of people walking in a garden—a simple yet groundbreaking moment that marked the dawn of a new art form.
+        </p>
+
+        <h2>Exploring the Movie Summary Corpus</h2>
         <p align="center">
             <iframe
-                src="assets/plot/Introduction/movies_distribution_per_country.html"
-                width="2500px"
+                src="assets/plot/Introduction/dist_per_sub_country1_df_unclipped.html"
+                width="900px"
                 height="600px"
                 frameborder="0"
                 style="display: block; margin: 0 auto; position: relative"
                 >
+            
             </iframe>
         </p>
 
         <p>
-          An analysis of the <a href="#introduction_dataset_exploration">total number of movies 
-            released by country</a> highlights the overwhelming dominance of the United States, which accounts for 42.04 % of the database. This inspired us to focus primarily on U.S. cinema, which serves as a rich lens through which we explore three compelling themes: <a href="#part1"><strong>war</strong></a>, <a href="#part2"><strong>social changes</strong></ahref></a>, and <a href="#part3"><strong>economic struggle</strong></a>. These themes unravel the narratives that have shaped history and continue to influence our understanding of it.
+          A preliminar analysis of the <a href="graph1"> total number of movies 
+            released by country</a> highlights the overwhelming dominance of the United States, which accounts for 42.04 % of the database. U.S. cinema especially beginned to look like the potential candidate to be scoped under a rich lens through which explore three compelling themes: <a href="#part1"><strong>war</strong></a>, <a href="#part2"><strong>social changes</strong></ahref></a>, and <a href="#part3"><strong>economic struggle</strong></a>. These themes unravel the narratives that have shaped history and continue to influence our understanding of it.
         </p>
-        
         <h3>The Initial Vision: A Tale of Two Rivals</h3>
         
         <p>
@@ -63,20 +79,40 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
         <h3>Why Focus Solely on American Movies?</h3>
         
         <p>
-          While comparing the two nations’ cinemas was an exciting proposition, the dataset proved to be heavily biased. U.S. cinema dominates the corpus in terms of quantity, diversity, and completeness of data, making any meaningful comparison with Russian films difficult. This lack of balance between the two sides of the rivalry hindered our ability to draw fair and comprehensive conclusions.
+          While comparing the two nations’ cinemas was an exciting proposition, the dataset proved, not surprisingly at this point, that U.S. cinema dominates in terms of quantity, diversity, and completeness of data, making any meaningful comparison with Russian films difficult. This lack of balance between the two sides of the rivalry hindered our ability to draw fair conclusions.
         </p>
-        <img src="{{ 'assets/img/noRussiacomparison.png' | relative_url }}" alt="Not found" />
+        <p align="center">
+            <iframe
+                src="assets/plot/Introduction/dist_per_sub_country1_df.html"
+                width="800px"
+                height="600px"
+                frameborder="0"
+                style="display: block; margin: 0 auto; position: relative"
+                >
+            </iframe>
+        </p>
+
         <p>
-          As a result, we decided to shift our focus entirely to American cinema. However, we will still examine the <strong>bipolar perspective of the Cold War</strong> through the lens of U.S. cinema, which often reflects the ideological struggles of the time. For example, the <strong>Vietnam War</strong>, a defining event of the bipolar conflict, will be analyzed from the U.S. point of view. This approach allows us to understand how American cinema portrayed the geopolitical tensions and ideological divides of the era.
+          As a result, we decided to shift our focus to American cinema (with some intersting exceptions). However, we will still examine the <strong>bipolar perspective of the Cold War</strong> through the lens of U.S. cinema, which often reflects the ideological struggles of the time. For example, the <strong>Vietnam War</strong>.
         </p>
 
         <section id="usa-movies-over-time">
-            <h2>Movies Produced in the USA Over Time</h2>
+            <h3>Movies Produced in the USA Over Time</h3>
             <p>
                 As we dive into the analysis of trends in American cinema, it's essential to start with a general overview of movie production over time. A graph showcasing the number of movies produced in the USA across decades provides a clear picture of the evolution of the American film industry.
             </p>
 
-            <img src="{{ 'assets/img/Usaovertime.png' | relative_url }}" alt="Not found" />
+            <p align="center">
+                <iframe
+                    src="assets/plot/Introduction/plot_USA_date_distribution.html"
+                    width="800px"
+                    height="600px"
+                    frameborder="0"
+                    style="display: block; margin: 0 auto; position: relative"
+                    >
+                </iframe>
+            </p>
+
             <h3>Key Observations:</h3>
             <ul>
                 <li>
@@ -92,28 +128,25 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
                     A noticeable increase in production reflects technological advancements, globalization, and the diversification of genres.
                 </li>
             </ul>
-            
-        </section>
+        </section>  
         
         <p>
-          Through this narrowed focus, we hope to provide a nuanced understanding of American cinema’s response to historical events, social changes, and economic challenges. By concentrating on this rich dataset, our project delves into the narratives that have shaped history and offers insights into the interplay between film and society.
-        </p>
-        
-        <p>
+          We hope to provide a nuanced understanding of the response of American cinema and others, to historical events.
           Stay tuned as we explore these themes further in our analysis, highlighting the power of cinema as both a storyteller and a historical archive.
         </p>
+    
     </section>
     <section id="introduction_dataset_exploration">
         
         <section id="collaborations">
             <h2>Collaboration in Movies Between the USA and other Countries</h2>
             <p>
-                An interesting dimension of our analysis lies in exploring international collaborations in filmmaking. To visualize this, we created a heat map that displays the normalized fraction of movies co-produced by the USA with other countries over time, using time bins of 10 years. This heat map provides a unique lens to examine how historical and geopolitical contexts influence cinematic partnerships.
+                An interesting dimension of our analysis lies in exploring international collaborations in filmmaking. To visualize this, we created a heat map that displays the normalized fraction of movies co-produced by the USA with other countries over time, using time bins of 10 years. This heat map provides an effective lens to examine historical and geopolitical links to cinematic partnerships.
             </p>
             <p align="center">
                 <iframe
-                    src="assets/plot/Introduction/collab_usa_heatmap.html"
-                    width="2500px"
+                    src="assets/plot/Introduction/normelize_collab_usa_heatmap.html"
+                    width="1000px"
                     height="800px"
                     frameborder="0"
                     style="display: block; margin: 0 auto; position: relative"
@@ -126,7 +159,7 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
                 <li>
                     <strong>Collaborations with Allies:</strong>
                     The USA has consistently collaborated with countries such as 
-                    <strong>France</strong>, <strong>Germany</strong>, and the 
+                    <strong>France</strong> and the 
                     <strong>United Kingdom</strong> over the decades. These collaborations reflect long-standing cultural and political alliances, especially in the aftermath of WWII and during the Cold War era.
                 </li>
                 <li>
@@ -165,12 +198,7 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
     <img src="{{ 'assets/img/six_nations_war.png' | relative_url }}" alt="Not found" />
     <h3>Key Observations:</h3>
     <ul>
-        <li>
-            <strong>Germany:</strong> Decline during WWII, post-war introspection, and modern focus on human stories.
-        </li>
-        <li>
-            <strong>USA:</strong> Peaks during WWII, Vietnam War era, and post-9/11 with a focus on contemporary conflicts.
-        </li>
+    
         <li>
             <strong>Italy:</strong> Neorealist narratives after WWII, followed by a decline in later decades.
         </li>
@@ -185,36 +213,163 @@ subtitle: How trends in the plots and personas in American Cinema reflect histor
         </li>
     </ul>
     <h3>Thematic Keyword Analysis:</h3>
+
+<section id="expanded-keyword-analysis">
+    <h2>Expanded Thematic Keyword Analysis</h2>
+
+    <h3>Middle East (Post-2004)</h3>
+    <p>
+        The early 21st century saw an increase in U.S. films focusing on the Middle East, especially in the aftermath of the Iraq War in 2003. These films often reflect Hollywood's reaction to the geopolitical and military dynamics, delving into themes such as terrorism, the ethics of war, and cultural clashes. Some notable examples... The almost absence of Middle East-themed films in earlier decades highlights that Hollywood's narrative choices could be influenced by contemporaneous political events and media coverage.
+    </p>
+
+    <p align="center">
+        <iframe
+            src="assets/plot/Nils/Frequency and Normalized frequency of Middle East-Related Movies per Year.html"
+            width="900px"
+            height="800px"
+            frameborder="0"
+            style="display: block; margin: 0 auto; position: relative"
+            >Plot CoreNLP</iframe
+        >
+    </p>
+
+    <h3>Nazi (1940s and 1960s-70s)</h3>
+    <p>
+        During the 1940s, Nazi-related films were primarily produced as wartime propaganda to rally support against Axis powers during World War II. These films portrayed the Nazis as clear antagonists, often emphasizing themes of heroism, sacrifice, and the fight for freedom.
+    </p>
+    <p>
+        In the 1960s and 70s, the resurgence of Nazi-related themes likely stemmed from Cold War anxieties. Filmmakers revisited authoritarian and totalitarian regimes, drawing parallels between Nazi ideologies and the oppressive nature of other adversaries. This period also witnessed a shift in tone, with more nuanced storytelling exploring the psychological and moral complexities of war.
+    </p>
+    <p align="center">
+        <iframe
+            src="assets/plot/Nils/Frequency and Normalized frequency of Nazi-Related Movies per Year.html"
+            width="900px"
+            height="800px"
+            frameborder="0"
+            style="display: block; margin: 0 auto; position: relative"
+            >Plot CoreNLP</iframe
+        >
+    </p>
+
+
+    <h3>Vietnam (1960s-80s)</h3>
+    <p>
+        The Vietnam War left a profound imprint on American cinema, producing two distinct waves of films.
+    </p>
     <ul>
         <li>
-            <strong>Middle East (Post-2004):</strong> Films addressing the Iraq War and geopolitical dynamics of the region.
-            <img src="{{ 'assets/img/middleeast.png' | relative_url }}" alt="Not found" />
+            <strong>1960s-70s:</strong> Early films depicted the Vietnam War through a lens of nationalism and heroism, reflecting the initial public sentiment and government stance.
         </li>
         <li>
-            <strong>Nazi (1940s and 1960s-70s):</strong> Wartime propaganda transitioning to Cold War themes.
-            <img src="{{ 'assets/img/nazi.png' | relative_url }}" alt="Not found" />
-        </li>
-        <li>
-            <strong>Vietnam (1960s-80s):</strong> Early nationalistic portrayals evolving into critical examinations of the war's impact.
-            <img src="{{ 'assets/img/vietnam.png' | relative_url }}" alt="Not found" />
+            <strong>1980s:</strong> A critical reappraisal emerged as filmmakers began to question the morality and consequences of the war. This era produced iconic anti-war films that examined the psychological toll on soldiers, the impact on Vietnamese civilians, and the divisive effect on American society. These films often featured raw and introspective narratives, challenging audiences to grapple with the broader implications of war.
         </li>
     </ul>
+    <p align="center">
+        <iframe
+            src="assets/plot/Nils/Frequency and Normalized frequency of Vietnam-Related Movies per Year.html"
+            width="900px"
+            height="800px"
+            frameborder="0"
+            style="display: block; margin: 0 auto; position: relative"
+            >Plot CoreNLP</iframe
+        >
+    </p>
+
+
+    <h3>Connecting the Themes</h3>
+    <p>
+        These three thematic arcs underscore how Hollywood adapts its narratives to align with the socio-political climate of the time. By analyzing keywords and themes in movie summaries, we can trace a cultural dialogue that mirrors evolving societal concerns—from the fear of totalitarian regimes to the aftermath of war and the complexities of geopolitical conflicts.
+    </p>
+</section>
     <p>
         This analysis underscores how each nation's film industry reflects its unique historical experiences, using cinema to interpret and narrate the complexities of war.
     </p>
 </section>
-
-    <section id="part1_topic_analysis_persona">
-        <p>
-            Here we will see which personas are detected by the CoreNLP
-            analysis.
-        </p>
-
-    </section>
+<section id="core-nlp-analysis">
+    <h2>CoreNLP Analysis</h2>
+    <p>
+        In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. These topics are essentially clusters of related words, which we analyzed to gain insights into trends and recurring themes in U.S. cinema over time.
+    </p>
+    <p>
+        Several visualizations were generated to study these topics, including:
+    </p>
+    <ul>
+        <li>
+            <strong>Normalized Cumulative Appearance of Assigned Topics (0 to 99) Over Time:</strong> A broad view of topic trends throughout the dataset's timeline.
+        </li>
+        <li>
+            <strong>Evolution of Topics in Middle East-Related Films Over Time:</strong> Focused analysis of topics in films addressing the Middle East, filtered to include only topics appearing at least five times.
+        </li>
+        <li>
+            <strong>Evolution of Topics in Vietnam-Related Films Over Time:</strong> Similar analysis for Vietnam-related films, also filtered to a minimum of five appearances per topic.
+        </li>
+    </ul>
+    <p>
+        Despite these efforts, a preliminary analysis did not reveal any particularly striking patterns or insights, with one notable exception: <strong>Topic 87</strong>. This topic stood out due to its record presence across the dataset, warranting further investigation into its content and significance.
+    </p>
+    <p>
+        Below, we provide the list of words associated with some of the most prominent topics, offering a glimpse into the recurring themes that shaped Hollywood narratives during the analyzed period.
+    </p>
+</section>
 </section>
 
+  <section id="part2-social-changes">
+    <h2>Part 2: Social Changes</h2>
+    <p>
+      This section explores the portrayal of social change in cinema, focusing on the evolution of societal norms and struggles, such as civil rights, feminism, and movements for equality. We analyzed movies through two main approaches:
+    </p>
+    <ol>
+      <li>
+        <strong>Genre Grouping by Semantic Themes:</strong>
+        Movies were grouped into genres strongly associated with social themes, such as drama, biography, and historical fiction. These genres often center on narratives that address societal issues, personal struggles, and transformations.
+      </li>
+      <li>
+        <strong>Keyword Analysis of Synopses:</strong>
+        Keywords related to social movements—such as "activism," "feminism," "civil rights," "equality," and "protest"—were identified in movie summaries. These terms were used to track trends in cinematic storytelling over time, highlighting the industry's response to key historical events.
+      </li>
+    </ol>
+    <h3>Observations and Insights:</h3>
+    <ul>
+      <li>
+        <strong>Civil Rights Movement (1950s–1970s):</strong>
+        A surge in movies addressing racial inequality and justice was observed during this period. Films tackled themes of segregation, discrimination, and empowerment, reflecting the fight for civil rights in America.
+      </li>
+      <li>
+        <strong>Feminism and Gender Equality:</strong>
+        Waves of feminist movements were mirrored in cinema, with films showcasing strong female protagonists, challenges to patriarchal norms, and narratives advocating for gender equality. Peaks in these themes aligned with the second wave of feminism in the 1960s–70s and later during the resurgence of feminist discourse in the 1990s.
+      </li>
+      <li>
+        <strong>Post-Colonial and Cultural Identity:</strong>
+        Movies in the 1970s and 1980s often explored themes of identity, heritage, and the aftermath of colonialism, particularly in nations undergoing significant social transformations.
+      </li>
+      <li>
+        <strong>The LGBTQ+ Movement:</strong>
+        Representation of LGBTQ+ issues gained prominence starting in the 1990s, with a growing number of films focusing on acceptance, rights, and the challenges faced by these communities.
+      </li>
+      <li>
+        <strong>Globalization and Multiculturalism (2000s):</strong>
+        As globalization became a defining feature of modern societies, cinema began to explore narratives of migration, cultural integration, and diversity, emphasizing shared human experiences.
+      </li>
+    </ul>
+    <p>
+      Through this analysis, we aim to connect these cinematic trends with the broader social transformations of their times, showing how films serve as cultural artifacts that document and influence societal change.
+    </p>
+    <h3>Visualizations:</h3>
+    <p>This section will include:</p>
+    <ul>
+      <li>A graph showing the number of social change-related movies over time.</li>
+      <li>A word cloud or frequency plot illustrating prominent keywords in movie synopses.</li>
+      <li>
+        Genre-based visualizations to emphasize the thematic focus of social change narratives.
+      </li>
+    </ul>
+    <p>
+      By integrating genre analysis with linguistic exploration, this section underscores how cinema captures and amplifies the voices of societal transformation.
+    </p>
+  </section>
+   
 
-<section id="part2">
+  <section id="part2">
     <h2>Part 2: Social changes</h2>
     <section id="part2_6_nations">
         <p>
