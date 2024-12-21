@@ -245,8 +245,10 @@ subtitle: Do tendencies in American Cinema reflect historical events?
 
     <h3>Middle East (Post-2004)</h3>
     <p>
-        The early 21st century saw an increase in U.S. films focusing on the Middle East, especially in the aftermath of the Iraq War in 2003. These films often reflect Hollywood's reaction to the geopolitical and military dynamics, delving into themes such as terrorism, the ethics of war, and cultural clashes. Some notable examples... The almost absence of Middle East-themed films in earlier decades highlights that Hollywood's narrative choices could be influenced by contemporaneous political events and media coverage.
-    </p>
+        The early 21st century saw an increase in U.S. films focusing on the Middle East, especially in the aftermath of the Iraq War in 2003. These films often reflect Hollywood's reaction to the geopolitical and military dynamics, delving into themes such as terrorism, the ethics of war, and cultural clashes. 
+        <p><strong>The Marine</strong>, <strong>Syriana</strong>, and <strong>Jarhead</strong> are often discussed in the context of Iraq War films due to their portrayal of military and geopolitical themes. <em>The Marine</em> (2006) reflects the action and emotional toll of soldiers returning from Iraq, even though it focuses on a rescue mission. <em>Syriana</em> (2005) explores the intersection of oil, politics, and the Middle East, critically addressing the Iraq War’s broader consequences. Meanwhile, <em>Jarhead</em> (2005) depicts the emotional and psychological strain of military service in the Middle East, resonating with soldiers' experiences during Iraq. These films offer various perspectives on the war's impact, from personal struggles to global politics.
+        The almost absence of Middle East-themed films in earlier decades highlights that Hollywood's narrative choices could be influenced by contemporaneous political events and media coverage.
+        </p>
 
     <p align="center">
         <iframe
@@ -285,7 +287,7 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     <section id="core-nlp-analysis">
         <h2>CoreNLP Analysis</h2>
         <p>
-            In this section, we discuss the analysis performed using CoreNLP to extract the most frequent "topics" from the movie summaries. We tried to extract a description of the characters or personas from the movie plots, and to perform latent dirichlet allocation (LDA) to form cluster of similar personas. We used the CoreNLP model to identify the characters named in the plots and to find the words used to describe these characters. We chose to look for 100 clusters of personas, to have enough to form meaningful categories, while not looking for too many to keep the results manageable.
+            In this section, we discuss the analysis performed using CoreNLP, we tried to extract a description of the characters or personas from the movie plots, and to perform latent dirichlet allocation (LDA) to form cluster of similar personas. We used the CoreNLP model to identify the characters named in the plots and to find the words used to describe these characters. We chose to look for 100 clusters of personas, to have enough to form meaningful categories, while not looking for too many to keep the results manageable.
 
             For each of these clusters of personas, we identified the 10 most relevant words, however, these groups of words are difficult to interpret as they are formed from the distances between personas and this logic doesn’t match with a human understanding of characters in movies. 
             
@@ -384,14 +386,15 @@ subtitle: Do tendencies in American Cinema reflect historical events?
     <section id="feminism">
     <h3> Women's Empowerment and Feminism (1960s-1990s)</h3>
     <p> 
-        In the mid-1990s, particularly around 1994 and 1995, there was a noticeable increase in films addressing themes of women's empowerment and liberation. This period saw a rise in movies that highlighted women's experiences and challenges, reflecting growing cultural discussions about gender equality and societal expectations. Films such as The Piano (1993) and Little Women (1994) offered fresh portrayals of women navigating personal and social struggles. Little Women in particular, with its depiction of four sisters coming of age in a post-Civil War America, presented complex female characters breaking from traditional roles. While there was an observable increase in such films during these years, it does not necessarily signify a dramatic "peak," but rather a continued and growing presence of women's stories in cinema.
+        In the mid-1990s, particularly around 1994 and 1995, there was a noticeable increase in films addressing themes of women's empowerment and liberation. This period saw a rise in movies that highlighted women's experiences and challenges, reflecting growing cultural discussions about gender equality and societal expectations. <p><strong>If Someone Had Known</strong> (1995) and <strong>The Stranger Beside Me</strong> (1995) are just examples of the films from the mid-90s that reflect issues related to women's rights and liberation. <strong>If Someone Had Known</strong> highlights the struggles of women in abusive relationships, shedding light on domestic violence and societal stigmas. Meanwhile, <strong>The Stranger Beside Me</strong>, while focusing on the victims of a serial killer, touches on women's vulnerability and the justice system's often inadequate response to crimes against women. These films represent the growing attention to women's autonomy, safety, and representation, which were key themes in the feminist discourse of the time.</p>
+        .
     </p>
 
     <p align="center">
         <iframe
             src="assets/plot/normalized_woman_rights_movies_per_year.html"
             width="950px"
-            height="550px"
+            height="500px"
             frameborder="0"
             style="display: block; margin: 0 auto; position: relative"
             >Plot CoreNLP</iframe
