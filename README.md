@@ -7,7 +7,7 @@ This repository contains a **website analyzing Hollywood movies** and their conn
 ## Link
 
 You can explore the website here:
-[https://nvalse.github.io](https://nvalse.github.io)
+[https://nvalse.github.io](https://nvalsa.github.io)
 
 ## Data Source
 
