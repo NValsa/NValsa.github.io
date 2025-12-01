@@ -1,17 +1,21 @@
----
 
 # Hollywood Movies and Historical Events Analysis
 
 This repository contains a **website analyzing Hollywood movies** and their connections with historical events. The website presents visualizations, plots, and insights about how films reflect or relate to social, economic, and political trends over time.
 
+## Course Context
+
+This project was developed for the EPFL course **CS-401 Applied Data Analysis**.  
+Course page (if still hosted): https://epfl-ada.github.io/teaching/fall2024/cs401/
+
 ## Link
 
-You can explore the website here:
+You can explore the website here:  
 [https://nvalsa.github.io](https://nvalsa.github.io)
 
 ## Data Source
 
-The movie dataset used for the analysis comes from Carnegie Mellon University:
+The movie dataset used for the analysis comes from Carnegie Mellon University:  
 [https://www.cs.cmu.edu/~ark/personas/](https://www.cs.cmu.edu/~ark/personas/)
 
 ## Features
@@ -28,13 +32,13 @@ The movie dataset used for the analysis comes from Carnegie Mellon University:
 
 ## Installation / Local Development
 
-To view the website locally, you need Ruby and Bundler installed. Then, run:
+To view the website locally, you need Ruby and Bundler installed. Then run:
 
 ```bash
 gem install bundler jekyll
 bundle install
 bundle exec jekyll serve
-```
+````
 
 The site will be available at `http://localhost:4000`.
 
@@ -53,5 +57,3 @@ Optional files like `_data` and staticman configurations can be removed if comme
 ## License
 
 This repository uses the [MIT License](LICENSE).
-
----
