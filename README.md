@@ -33,7 +33,7 @@ The movie dataset used for the analysis comes from Carnegie Mellon University:
 ## Detailed Analysis
 
 This repository focuses on the **website and its visualizations**. For an in-depth description of the **data processing, analysis methods, and research questions**, please see the main project README:  
-[History in Hollywood – Full Analysis](https://github.com/epfl-ada/ada-2024-project-spaghettisolution/blob/main/README.md)
+[History in Hollywood – Full Analysis](https://github.com/epfl-ada/ada-2024-project-spaghettisolution))
 
 ## Installation / Local Development
 
