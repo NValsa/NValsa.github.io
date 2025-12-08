@@ -30,6 +30,11 @@ The movie dataset used for the analysis comes from Carnegie Mellon University:
 * Uses HTML, CSS, and JavaScript for front-end visualizations.
 * Plot data is precomputed and included as HTML/JSON files.
 
+## Detailed Analysis
+
+This repository focuses on the **website and its visualizations**. For an in-depth description of the **data processing, analysis methods, and research questions**, please see the main project README:  
+[History in Hollywood – Full Analysis](https://github.com/epfl-ada/ada-2024-project-spaghettisolution/blob/main/README.md)
+
 ## Installation / Local Development
 
 To view the website locally, you need Ruby and Bundler installed. Then run:
